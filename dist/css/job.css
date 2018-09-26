@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  line-height: 30px;
+  text-align: justify;
+}
+p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  width: 100%;
+  height: 40px;
+  background: url(../images/titbg.jpg) no-repeat center;
+  margin: 40px auto 10px;
+}
+.mid {
+  width: 1000px;
+  margin: 0 auto;
+}
+.title .tit_txt {
+  font-size: 32px;
+  color: #0085d0;
+  padding-left: 36px;
+  padding-top: 3px;
+}
+.title .tit_txt .en {
+  font-size: 14px;
+  color: #0085d0;
+  text-align: right;
+  float: right;
+}
+.btn_box {
+  text-align: right;
+}
+.content {
+  position: relative;
+  *padding-top: 20px
+}
+.main {
+  width: 1000px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto 50px auto;
+}
+.jobs {
+  width: 990px;
+  margin: 0 auto;
+}
+.jobs .comname {
+  font-size: 18px;
+  color: #fff;
+  width: 996px;
+  font-weight: bold;
+  background: #0085d0;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.jobs .introduction {
+  text-indent: 30px;
+}
+.jobs .jobslist {
+  width: 996px;
+  margin: 15px auto 20px;
+  display: none;
+}
+.jobs .jobslist .comintro {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 2;
+  font-weight: bold;
+}
+.copyright {
+  width: 100%;
+  height: 58px;
+  background: url(../images/btmbg.jpg) no-repeat center top;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+}
+.intro_com {
+  width: 890px;
+  margin: 0 auto 50px auto;
+  font: 14px tahoma, arial;
+  line-height: 30px;
+}
+h1 {
+  font-size: 100%;
+  display: block;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+.iconfont {
+  cursor: pointer;
+  color: #0085d0;
+  padding: 0 10px;
+  font-size: 20px;
+}
+.fold {
+  border: 1px dashed #ccc;
+  margin: 10px 0px;
+  padding: 5px;
+  font-size: 14px;
+  display: none;
+}
+.top {
+  width: 100%;
+  height: 90px;
+  background: #fff;
+}
+.logo {
+  width: 240px;
+  float: left;
+}
+.navi {
+  float: right;
+}
+ul, ol {
+  list-style: none;
+}
+ul {
+  display: block;
+}
+.navi li a:hover, .navi li a.on {
+  border-bottom: 5px solid #0085d0;
+}
+.navi li {
+  width: 72px;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 90px;
+  float: left;
+}
+.navi li a {
+  display: block;
+  width: 72px;
+  height: 75px;
+  border-bottom: 5px solid #fff;
+  font-size: 18px;
+}
+a {
+  color: #3C3C3C;
+  text-decoration: none;
+}
+.send {
+  color: #fff;
+  background-color: #0085d0;
+  border: 1px solid #0085d0;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 80px;
+  height: 25px;
+  line-height: 23px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.btn_login {
+  padding: 0 15px;
+  height: 35px;
+  line-height: 33px;
+  background-color: #FDEE1C;
+  color: #370A06;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn_quit {
+  color: #2478C8;
+  background-color: #E8E9E8;
+  display: none;
+}
+.job_list {
+  margin-bottom: 5px;
+}
+.job_list li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 5px 20px 5px 0;
+  padding: 5px 10px;
+  background: #0085d0;
+  font-size: 14px;
+  line-height: 25px;
+}
+.job_list li a {
+  display: block;
+  color: #fff;
+}
+.job_list li.active {
+  background-color: #7bc631
+}
+.jobspan {
+  color: #666;
+}
+.jobs_list_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.job_list_type {
+  font-weight: bold;
+}
+.job_list_more {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #0070c0;
+}

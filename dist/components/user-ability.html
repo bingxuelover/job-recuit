@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>技能爱好</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="application_tabWrap j_tabWrap">
+        <div class="application_tabTitle">
+          <h3 class="dib">技能/爱好</h3>
+          <p >&nbsp;有一技之长可能会让你脱颖而出</p>
+          <div class="application_tabOperate">
+            <a href="javascript:void(0)" class="imgBg icon_slideUp j_tabSlideUp" style="display:none" title="展开编辑">&nbsp;</a>
+            <a href="javascript:void(0)" class="imgBg icon_canEdit j_tabEdit" title="编辑">&nbsp;</a>
+          </div>
+        </div>
+        <div class="application_tabMain j_tabMain">
+          <div class="application_tabLoading j_tabLoading" style="display:none">
+            <span class="dib">&nbsp;</span>
+          </div>
+          <div class="application_previewWrap j_preview" style="display:none">
+            <div class="application_previewTitle j_previewTitle">&nbsp;</div>
+            <div class="application_previewMain j_previewMain">
+              <ul></ul>
+            </div>
+          </div>
+          <div class="application_formWrap j_formWrap">
+            <form id="skill_favorite" name="skill_favorite" formid="1028" childmoudle="">
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>英语等级</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="skill_favorite_english_level" name="english_level" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的英语等级水平" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="66">CET4</option>
+                    <option value="67">TEM4</option>
+                    <option value="68">CET6</option>
+                    <option value="69">TEM8</option>
+                    <option value="70">未参加</option>
+                    <option value="999">其他</option>
+                  </select>
+                  <input id="skill_favorite_english_score" type="text" name="english_score" maxlength="5" class="applicationInput small mr10" rule="{&quot;must&quot;:true,&quot;max&quot;:5}" tip="要确保与证书上的分数一致。" err="请填写您英语等级考试的分数" style="display: none;">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_certificate_itemWrap">
+                <div class="application_itemTitle j_itemTitle">&nbsp;英语证书</div>
+              </div>
+              <div class="application_itemAdd j_certificate_addBox">
+                <a href="javascript:void(0)" class="dib j_certificate_addBtn" max="8" number="1">
+                  <span>+</span>添加更多英语证书</a>
+              </div>
+              <div class="j_certificateTemp" style="display:none">
+                <div class="application_itemWrap j_itemWrap j_certificate_itemWrap">
+                  <div class="application_itemTitle j_itemTitle">&nbsp;</div>
+                  <div class="application_itemCont j_itemCont clearfix">
+                    <select id="skill_favorite_certificate_certificate" name="certificate_certificate" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择英语证书。" style="display: none;">
+                      <option value="-1" selected="selected">请选择</option>
+                      <option value="1">TOEFL</option>
+                      <option value="2">GRE</option>
+                      <option value="3">GMAT</option>
+                      <option value="30">托业</option>
+                      <option value="4">雅思</option>
+                      <option value="5">剑桥商务英语证书1级</option>
+                      <option value="6">剑桥商务英语证书2级</option>
+                      <option value="7">剑桥商务英语证书3级</option>
+                      <option value="8">剑桥英语入门考试</option>
+                      <option value="9">剑桥初级英语考试</option>
+                      <option value="10">剑桥第一英语证书考试</option>
+                      <option value="11">全国公共英语等级考试</option>
+                      <option value="12">通用英语初级</option>
+                      <option value="13">通用英语中级</option>
+                      <option value="14">中级口译证书</option>
+                      <option value="15">高级口译证书</option>
+                      <option value="16">博思A1</option>
+                      <option value="17">博思A2</option>
+                      <option value="18">博思B1</option>
+                      <option value="19">博思B2</option>
+                      <option value="20">博思C1</option>
+                      <option value="21">博思C2</option>
+                      <option value="999">其他</option>
+                    </select>
+                    <div class="application_itemLabel" style="display: none;">获得时间</div>
+                    <input
+                      type="text"
+                      readonly="readonly"
+                      name="certificate_achievedate"
+                      id="skill_favorite_certificate_achievedate"
+                      value="选择日期"
+                      data-value="选择日期"
+                      datatype="6"
+                      class="applicationInput applicationPlug j_plug j_toDay moreSmall mr10"
+                      rule="{&quot;must&quot;:true,&quot;max&quot;:20}"
+                      err="请选择您所获英语证书的时间"
+                      style="display: none;">
+                    <div class="application_itemLabel" style="display: none;">等级/分数</div>
+                    <input id="skill_favorite_certificate_level" type="text" name="certificate_level" maxlength="5" class="applicationInput superSmall mr10" rule="{&quot;must&quot;:true,&quot;max&quot;:5}" err="请填写您所获英语证书的分数或等级" style="display: none;">
+                    <a href="javascript:void(0)" class="c9 l pt5 j_certificate_deleteBtn">删除</a>
+                    <div class="application_tipWrap j_tipWrap">
+                      <div class="application_tipMain j_tipMain" style="display:none">
+                        <i class="imgBg">&nbsp;</i>
+                        <p>&nbsp;</p>
+                      </div>
+                    </div>
+                    <div class="application_errorWrap j_errorWrap">
+                      <div class="application_errorMain j_errorMain" style="display:none">
+                        <i class="imgBg">&nbsp;</i>
+                        <p>&nbsp;</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_language_skill_itemWrap">
+                <div class="application_itemTitle j_itemTitle">&nbsp;语言能力</div>
+              </div>
+              <div class="application_itemAdd j_language_skill_addBox">
+                <a href="javascript:void(0)" class="dib j_language_skill_addBtn" max="8">
+                  <span>+</span>添加更多语言能力</a>
+              </div>
+              <div class="j_language_skillTemp" style="display:none">
+                <div class="application_itemWrap j_itemWrap j_language_skill_itemWrap">
+                  <div class="application_itemTitle j_itemTitle">&nbsp;</div>
+                  <div class="application_itemCont j_itemCont clearfix">
+                    <select id="skill_favorite_language_skill_language_skill" name="language_skill_language_skill" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择语言能力。" style="display: none;">
+                      <option value="-1" selected="selected">请选择</option>
+                      <option value="英语">英语</option>
+                      <option value="日语">日语</option>
+                      <option value="法语">法语</option>
+                      <option value="德语">德语</option>
+                      <option value="俄语">俄语</option>
+                      <option value="韩语">韩语</option>
+                      <option value="西班牙语">西班牙语</option>
+                      <option value="葡萄牙语">葡萄牙语</option>
+                      <option value="阿拉伯语">阿拉伯语</option>
+                      <option value="意大利语">意大利语</option>
+                      <option value="上海话">上海话</option>
+                      <option value="广东话">广东话</option>
+                      <option value="闽南话">闽南话</option>
+                      <option value="999">其他</option>
+                    </select>
+                    <div class="application_itemLabel" style="display: none;">听说能力</div>
+                    <select id="skill_favorite_language_skill_listen_say" name="language_skill_listen_say" type="select-one" class="applicationSelsct superSmall" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的语言听说能力水平" style="display: none;">
+                      <option value="-1" selected="selected">请选择</option>
+                      <option value="一般">一般</option>
+                      <option value="良好">良好</option>
+                      <option value="熟练">熟练</option>
+                      <option value="精通">精通</option>
+                    </select>
+                    <div class="application_itemLabel" style="display: none;">读写能力</div>
+                    <select id="skill_favorite_language_skill_read_write" name="language_skill_read_write" type="select-one" class="applicationSelsct superSmall" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的语言读写能力水平" style="display: none;">
+                      <option value="-1" selected="selected">请选择</option>
+                      <option value="一般">一般</option>
+                      <option value="良好">良好</option>
+                      <option value="熟练">熟练</option>
+                      <option value="精通">精通</option>
+                    </select>
+                    <a href="javascript:void(0)" class="c9 l pt5 j_language_skill_deleteBtn">删除</a>
+                    <div class="application_tipWrap j_tipWrap">
+                      <div class="application_tipMain j_tipMain" style="display:none">
+                        <i class="imgBg">&nbsp;</i>
+                        <p>&nbsp;</p>
+                      </div>
+                    </div>
+                    <div class="application_errorWrap j_errorWrap">
+                      <div class="application_errorMain j_errorMain" style="display:none">
+                        <i class="imgBg">&nbsp;</i>
+                        <p>&nbsp;</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="application_itemWrap j_itemWrap"> <div class="application_itemTitle j_itemTitle">其它技能</div> <div class="application_itemCont j_itemCont clearfix"> <textarea class="applicationTextarea" datatype="2" name="other_skill"
+              id="skill_favorite_other_skill" maxlength="1000" rule="{&quot;must&quot;:false,&quot;max&quot;:1000}" err="请填写您的其他技能"></textarea> <div class="application_tipWrap j_tipWrap"> <div class="application_tipMain j_tipMain" style="display:none"> <i
+              class="imgBg">&nbsp;</i> <p>&nbsp;</p> </div> </div> <div class="application_errorWrap j_errorWrap"> <div class="application_errorMain j_errorMain" style="display:none"> <i class="imgBg">&nbsp;</i> <p>&nbsp;</p> </div> </div> <div
+              class="application_textareaNum j_textareaNum"> <span>0</span>/<font>1000</font> </div> </div> </div> -->
+              <div class="application_btnWrap j_btnWrap">
+                <a href="javascript:void(0)" class="application_btnSure j_btnSure">保存</a>
+                <a href="javascript:void(0)" class="application_btnCancel j_btnCancel">取消</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

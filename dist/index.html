@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>简历申请表</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/city.css">
+    <link rel="stylesheet" href="./css/application.css">
+    <script src="./js/jquery-1.7.2.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="applicationMain clearfix">
+        <div class="applicationLeft l">
+          <div class="applicationTitle clearfix">
+            <div class="fl applicationTitleL">
+              <div class="applicationTitleShow" style="display: block;">
+                <span>申请职位</span>
+                <p>简历填写完整后，点击右侧提交申请按钮进行提交！</p>
+                <p id="submitOk" style="display: none">您已经申请了职位：
+                  <span id="companyHas"></span>
+                  -<span id="positionHas"></span>。
+                  <em>简历信息可以进行修改。</em>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="application_resumeMain" id="content">
+            <div id="itemInfo" class="content-box"></div>
+            <div id="itemContact" class="content-box"></div>
+            <div id="itemEducation" class="content-box"></div>
+            <div id="itemWanted" class="content-box"></div>
+            <div id="itemAbility" class="content-box"></div>
+            <div id="itemFamily" class="content-box"></div>
+            <div id="itemElse" class="content-box"></div>
+          </div>
+        </div>
+        <div class="applicationRight r">
+          <div class="j_applicationRight" id="menu">
+            <ul class="application_nav pt20 j_applicationNav">
+              <li id="nav_person_info" class="cur" data-id="itemInfo" required="required">
+                <span class="imgBg icon_person_info">&nbsp;</span>
+                <span class="application_navText">个人信息</span>
+                <span class="imgBg icon_correct">&nbsp;</span>
+              </li>
+              <li id="nav_contact_info" data-id="itemContact" required="required">
+                <span class="imgBg icon_contact_info">&nbsp;</span>
+                <span class="application_navText">联系方式</span>
+                <span class="imgBg icon_correct">&nbsp;</span>
+              </li>
+              <li id="nav_education_experience" data-id="itemEducation" required="required">
+                <span class="imgBg icon_education_experience">&nbsp;</span>
+                <span class="application_navText">教育经历</span>
+                <span class="imgBg icon_correct">&nbsp;</span>
+              </li>
+              <li id="nav_wanted_career" data-id="itemWanted" required="required">
+                <span class="imgBg icon_job_desired">&nbsp;</span>
+                <span class="application_navText">求职意向</span>
+                <span class="imgBg icon_correct">&nbsp;</span>
+              </li>
+              <li id="nav_skill_favorite" data-id="itemAbility">
+                <span class="imgBg icon_skill_favorite">&nbsp;</span>
+                <span class="application_navText">技能/爱好</span>
+                <span class="imgBg icon_correct">&nbsp;</span>
+              </li>
+              <li id="nav_family_relationship" data-id="itemFamily" required="required">
+                <span class="imgBg icon_family_relationship">&nbsp;</span>
+                <span class="application_navText">家庭关系</span>
+                <span class="imgBg icon_correct">&nbsp;</span>
+              </li>
+              <li id="nav_photo_attach" data-id="itemElse">
+                <span class="imgBg icon_photo_attach">&nbsp;</span>
+                <span class="application_navText">其它</span>
+                <span class="imgBg icon_correct">&nbsp;</span>
+              </li>
+            </ul>
+            <a href="javascript:void(0)" class="applicationTemp_submitBtn mt30" id="submitAllBtn">
+              提交申请
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input id="ResumeInfo" type="hidden" value="">
+    <input id="ResumeType" type="hidden" value="true">
+    <input id="imgdomain" type="hidden" value="">
+    <input id="languageID" type="hidden" value="1">
+    <input id="smecompanyid" type="hidden" value="0">
+    <input id="campuspostionid" type="hidden" value="0">
+    <div id="resumeInfoContent">
+      <input id="ResumeInfo_person_info" type="hidden" key="" value="{}">
+      <input id="ResumeInfo_contact_info" type="hidden" key="" value="{}">
+      <input id="ResumeInfo_education_experience" type="hidden" key="" value="{}">
+      <input id="ResumeInfo_wanted_career" type="hidden" key="" value="{}">
+      <input id="ResumeInfo_skill_favorite" type="hidden" key="" value="{}">
+      <input id="ResumeInfo_family_relationship" type="hidden" key="" value="{}">
+      <input id="ResumeInfo_photo_attach" type="hidden" key="" value="{}">
+    </div>
+    <div class="cPop_cover" id="cPop_cover" style="display: none;"></div>
+    <!--[if lte IE 6]> <iframe class="cPop_coverIframe" name="cPop_coverIframe" id="cPop_coverIframe" frameborder="0" scrolling="no" style="display:none"> </iframe> <![endif]-->
+    <!-- * pop Confirm * -->
+    <div class="cPop_sWrap j_cPopWrap" style="display:none">
+      <div class="j_cPop_boxTip">
+        <div class="cPop_ssTop"></div>
+        <div class="cPop_ssMain">
+          <div class="cPop_title">
+            <h5 class="fb14">提示</h5>
+          </div>
+          <div class="cPop_content">
+            <h2>诚信声明</h2>
+            <p>声明</p>
+            <div class="cPop_content_bottom">
+              <input id="confirmOk" type="checkbox" name="confirmOk" value="1">
+              <label for="confirmOk">确认阅读并且同意上面的声明</label>
+              <div class="pt20">
+                <a href="javascript:void(0)" id="confirmOkClose" class="application_btnSure  cPopBtn">确定</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cPop_ssBot"></div>
+      </div>
+    </div>
+    <div class="cPop_ssWrap j_cPopWrap" style="display:none">
+      <div class="j_cPop_confirmTip">
+        <div class="cPop_ssTop"></div>
+        <div class="cPop_ssMain">
+          <div class="cPop_title">
+            <h5 class="fb14">提示</h5>
+          </div>
+          <div>
+            <div class="tac f14 pt30 pb30 j_popMsg"></div>
+            <div class="tac pb10">
+              <a href="javascript:void(0)" class="application_btnSure mr10 cPopBtn j_popSureBtn">确定</a>
+              <a href="javascript:void(0)" class="application_btnCancel cPopBtn j_popCancelBtn">取消</a>
+            </div>
+          </div>
+        </div>
+        <div class="cPop_ssBot"></div>
+      </div>
+    </div>
+    <div class="cPop_ssWrap j_cPopWrap" style="display:none">
+      <div class="j_cPop_alertTip">
+        <div class="cPop_ssTop"></div>
+        <div class="cPop_ssMain">
+          <div class="cPop_title">
+            <h5 class="fb14">提示</h5>
+          </div>
+          <div>
+            <div class="tac f14 pt30 pb30 j_popMsg"></div>
+            <div class="tac pb10">
+              <a href="javascript:void(0)" class="application_btnSure cPopBtn j_popSureBtn">确定</a>
+            </div>
+          </div>
+        </div>
+        <div class="cPop_ssBot"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./application/fileupload.js"></script>
+    <script type="text/javascript" src="./js/city.data.js"></script>
+    <script type="text/javascript" src="./js/city.js"></script>
+    <script type="text/javascript" src="./application/city.js"></script>
+    <script type="text/javascript" src="./application/jobIndustryData.js"></script>
+    <script type="text/javascript" src="./application/school.js"></script>
+    <script type="text/javascript" src="./application/majorData.js"></script>
+    <script type="text/javascript" src="./application/jquery.form.js"></script>
+    <script type="text/javascript" src="./application/imgEdit.js"></script>
+    <script type="text/javascript" src="./application/select.js"></script>
+    <script type="text/javascript" src="./application/selectCity.js"></script>
+    <script type="text/javascript" src="./application/selectIndustry.js"></script>
+    <script type="text/javascript" src="./application/selectPosition.js"></script>
+    <script type="text/javascript" src="./application/selectPositonDefine.js"></script>
+    <script type="text/javascript" src="./application/autoMajorName.js"></script>
+    <script type="text/javascript" src="./application/autoSchoolName.js"></script>
+    <script type="text/javascript" src="./application/release.js"></script>
+    <script type="text/javascript" src="./application/plug.js"></script>
+    <script type="text/javascript" src="./application/validate.js"></script>
+    <script type="text/javascript" src="./js/config.js"></script>
+    <script type="text/javascript" src="./application/utils.js"></script>
+    <script type="text/javascript" src="./application/preview.js"></script>
+    <script type="text/javascript" src="./application/event.js"></script>
+    <script type="text/javascript" src="./application/applicationRight.js"></script>
+    <script type="text/javascript" src="./application/application.js"></script>
+  </body>
+</html>

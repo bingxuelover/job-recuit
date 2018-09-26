@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>个人信息</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="application_tabWrap j_tabWrap" required="required">
+        <div class="application_tabTitle">
+          <h3 class="dib">教育经历<span>（必填）</span></h3>
+          <p class="f16 warning">&nbsp;初中、高中、本科为必填</p>
+          <div class="application_tabOperate">
+            <a href="javascript:void(0)" class="imgBg icon_slideUp j_tabSlideUp" style="display:none" title="展开编辑">&nbsp;</a>
+            <a href="javascript:void(0)" class="imgBg icon_add j_tabAdd" title="添加" max="8" style="display: none;">&nbsp;</a>
+            <a href="javascript:void(0)" class="imgBg icon_canEdit j_tabEdit" style="display: inline-block;" title="编辑">&nbsp;</a>
+          </div>
+        </div>
+        <div class="application_tabMain j_tabMain">
+          <div class="application_tabLoading j_tabLoading" style="display:none">
+            <span class="dib">&nbsp;</span>
+          </div>
+          <div class="j_temp" style="display:none;">
+            <div class="j_tabRepeat application_tabRepeat">
+              <div class="application_previewWrap j_preview" style="display:none">
+                <div class="application_previewTitle j_previewTitle">
+                  <div class="application_previewTitle_bg">&nbsp;</div>
+                  <div class="application_previewName dib j_previewName">&nbsp;</div>
+                  <div class="application_previewOperate">
+                    <a href="javascript:void(0)" class="imgBg icon_canEdit mr5 j_repeatEdit" title="编辑">&nbsp;</a>
+                    <a href="javascript:void(0)" class="imgBg icon_delete j_delete" title="删除">&nbsp;</a>
+                  </div>
+                </div>
+                <div class="application_previewMain j_previewMain">
+                  <ul>&nbsp;</ul>
+                </div>
+              </div>
+              <div class="application_formWrap j_formWrap">
+                <form id="education_experience" name="education_experience" childmoudle="m_education_experience" formid="1026" formeditid="">
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>学历</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <select id="education_experience_education_degree" name="education_degree" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的学历。" style="display: none;">
+                        <option value="-1">请选择</option>
+                        <option value="1">博士研究生</option>
+                        <option value="2">MBA</option>
+                        <option value="3">硕士研究生</option>
+                        <option value="4">大学本科</option>
+                        <option value="5">大学专科</option>
+                        <option value="6">中专/技校/职高</option>
+                        <option value="7">高中</option>
+                        <option value="8" selected="selected">初中</option>
+                        <option value="9">其他</option>
+                      </select>
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>学校名称</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input type="text" class="applicationInput j_plug j_schoolName" name="school_name" id="education_experience_school_name" datatype="8" tip="请填写学校全称，海外学校填写英文名。" rule="{&quot;must&quot;:true,&quot;max&quot;:100}" err="请填写学校全称，海外学校填写英文名。">
+                      <input id="education_experience_school_name_school_id" class="appForm_Input" datatype="0" type="hidden" name="school_name_school_id">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>入学时间</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input
+                        type="text"
+                        readonly="readonly"
+                        name="edu_date_start"
+                        id="education_experience_edu_date_start_1"
+                        value="选择日期"
+                        data-value="选择日期"
+                        datatype="6"
+                        class="applicationInput applicationPlug j_plug j_toDay j_dateStar"
+                        rule="{&quot;must&quot;:true,&quot;max&quot;:20}"
+                        err="请选择您的入学时间">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>请选择您的入学时间</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_edu_date_start">
+                    <div class="application_itemTitle j_itemTitle">&nbsp;<i class="icon_must imgBg">&nbsp;</i>毕业时间</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input
+                        type="text"
+                        readonly="readonly"
+                        name="edu_date_end"
+                        id="education_experience_edu_date_end_1"
+                        value="选择日期"
+                        data-value="选择日期"
+                        datatype="6"
+                        class="applicationInput applicationPlug j_plug j_toDay j_dateEnd"
+                        rule="{&quot;must&quot;:true,&quot;max&quot;:20}"
+                        err="请选择您的毕业时间">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">&nbsp;<i class="icon_must imgBg">&nbsp;</i>学制</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input type="text" name="edu_time_long" id="education_experience_edu_timeLong" value="" data-value="-1" datatype="6" class="applicationInput superSmall" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写学制是几年。" tip="请填写学制是几年。">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_degree" style="display: none">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>受教育类型</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <select id="education_experience_edu_type" name="edu_type" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的所受教育类型。" style="display: none;">
+                        <option value="-1" selected="selected">请选择</option>
+                        <option value="1">全日制统分统招</option>
+                        <option value="2">海外留学</option>
+                        <option value="3">成人教育</option>
+                        <option value="4">定向</option>
+                        <option value="5">非定向</option>
+                        <option value="6">委培</option>
+                        <option value="7">自费</option>
+                        <option value="8">其他</option>
+                      </select>
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_degree_direction" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">&nbsp;<i class="icon_must imgBg">&nbsp;</i>研究方向</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input id="education_experience_education_degree_direction" type="text" name="education_degree_direction" maxlength="200" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:200}" err="请填写您的研究方向。">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_degree" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">&nbsp;<i class="icon_must imgBg">&nbsp;</i>院系</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input id="education_experience_college_name" type="text" name="college_name" maxlength="200" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:200}" err="请填写您所在的院系">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_degree" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">&nbsp;<i class="icon_must imgBg">&nbsp;</i>专业</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input type="text" class="applicationInput j_plug j_majorName" name="major_name" id="education_experience_major_name" datatype="9" rule="{&quot;must&quot;:true,&quot;max&quot;:100}" tip="专业名称需和即将获得的证书名称一致。" err="请填写专业名称。">
+                      <input type="hidden" name="major_name_major_id" id="education_experience_major_name_major_id">
+                      <input type="hidden" name="major_name_major_type_id" id="education_experience_major_name_major_type_id">
+                      <input type="hidden" name="major_name_major_type" id="education_experience_major_name_major_type">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_degree" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">&nbsp;专业课程</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input id="education_experience_main_course" type="text" name="main_course" maxlength="200" tip="请列举一些您主修的专业课程" class="applicationInput" rule="{&quot;must&quot;:false,&quot;max&quot;:200}" err="请列举您主修的专业课程">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_degree" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">&nbsp;辅修专业</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input type="text" class="applicationInput j_plug j_majorName" name="secondary_name" id="education_experience_secondary_name" datatype="9" rule="{&quot;must&quot;:false,&quot;max&quot;:100}" err="请填写辅修专业名称。">
+                      <input type="hidden" name="secondary_name_major_id" id="education_experience_secondary_name_major_id">
+                      <input type="hidden" name="secondary_name_major_type_id" id="education_experience_secondary_name_major_type_id">
+                      <input type="hidden" name="secondary_name_major_type" id="education_experience_secondary_name_major_type">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_special" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">
+                      录取批次</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <select id="education_experience_admission_type" name="admission_type" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择您的录取批次。" style="display: none;">
+                        <option value="-1" selected="selected">请选择</option>
+                        <option value="1">本科一批</option>
+                        <option value="2">本科二批</option>
+                        <option value="3">本科三批</option>
+                        <option value="4">其他</option>
+                      </select>
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_special" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>学校类型</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <div class="clearfix">
+                        <div class="l application_box j_radioBox" name="desired_special_promotion_private" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择">
+                          <div class="dib">
+                            <span class="applicationSpan">是否民办</span>
+                            <input type="radio" name="desired_special_promotion_private" class="applicationRadio" value="101"/>
+                            <label class="applicationLabel">是</label>
+                          </div>
+                          <div class="dib">
+                            <input type="radio" name="desired_special_promotion_private" class="applicationRadio" value="102"/>
+                            <label class="applicationLabel">否</label>
+                          </div>
+                        </div>
+                        <div class="application_tipWrap j_tipWrap">
+                          <div class="application_tipMain j_tipMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p></p>
+                          </div>
+                        </div>
+                        <div class="application_errorWrap j_errorWrap">
+                          <div class="application_errorMain j_errorMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix">
+                        <div class="l application_box j_radioBox" name="desired_special_promotion_corperation" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择">
+                          <div class="dib">
+                            <span class="applicationSpan">是否中外合作办学</span>
+                            <input type="radio" name="desired_special_promotion_corperation" class="applicationRadio" value="103"/>
+                            <label class="applicationLabel">是</label>
+                          </div>
+                          <div class="dib">
+                            <input type="radio" name="desired_special_promotion_corperation" class="applicationRadio" value="104"/>
+                            <label class="applicationLabel">否</label>
+                          </div>
+                        </div>
+                        <div class="application_tipWrap j_tipWrap">
+                          <div class="application_tipMain j_tipMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p></p>
+                          </div>
+                        </div>
+                        <div class="application_errorWrap j_errorWrap">
+                          <div class="application_errorMain j_errorMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix">
+                        <div class="l application_box j_radioBox" name="desired_special_promotion_all" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择">
+                          <div class="dib">
+                            <span class="applicationSpan">是否内地与港澳台地区合作办学</span>
+                            <input type="radio" name="desired_special_promotion_all" class="applicationRadio" value="105"/>
+                            <label class="applicationLabel">是</label>
+                            <input type="radio" name="desired_special_promotion_all" class="applicationRadio" value="106"/>
+                            <label class="applicationLabel">否</label>
+                          </div>
+                        </div>
+                        <div class="application_tipWrap j_tipWrap">
+                          <div class="application_tipMain j_tipMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p></p>
+                          </div>
+                        </div>
+                        <div class="application_errorWrap j_errorWrap">
+                          <div class="application_errorMain j_errorMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_special" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>本科是否专升本</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <div class="l application_box j_radioBox" name="desired_special_promotion" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择">
+                        <div class="dib">
+                          <input type="radio" name="desired_special_promotion" class="applicationRadio" value="51"/>
+                          <label class="applicationLabel">是</label>
+                        </div>
+                        <div class="dib">
+                          <input type="radio" name="desired_special_promotion" class="applicationRadio" value="52"/>
+                          <label class="applicationLabel">否</label>
+                        </div>
+                      </div>
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_special" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>本科是否专接本</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <div class="l application_box j_radioBox" name="desired_special_promotion_connect" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择">
+                        <div class="dib">
+                          <input type="radio" name="desired_special_promotion_connect" class="applicationRadio" value="61"/>
+                          <label class="applicationLabel">是</label>
+                        </div>
+                        <div class="dib">
+                          <input type="radio" name="desired_special_promotion_connect" class="applicationRadio" value="62"/>
+                          <label class="applicationLabel">否</label>
+                        </div>
+                      </div>
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_degree_score" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>高考成绩</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input type="text" class="applicationInput" name="college_result" id="education_experience_college_result" datatype="8" tip="请填写您的高考成绩" rule="{&quot;must&quot;:true,&quot;max&quot;:100}" err="请填写您的高考成绩">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap  j_education_degree" style="display: none">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>学位</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <select id="education_experience_education_level" name="education_level" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的学位。" style="display: none;">
+                        <option value="-1" selected="selected">请选择</option>
+                        <option value="1">博士</option>
+                        <option value="2">MBA</option>
+                        <option value="3">硕士</option>
+                        <option value="4">双学士</option>
+                        <option value="5">学士</option>
+                        <option value="6">其他</option>
+                        <option value="7">无</option>
+                      </select>
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap j_education_level" style="display:none">
+                    <div class="application_itemTitle j_itemTitle">&nbsp;<i class="icon_must imgBg">&nbsp;</i>辅修专业</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input id="education_experience_minor_name" type="text" name="minor_name" maxlength="50" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:50}" err="请填写您的辅修专业">
+                      <input type="hidden" name="minor_name_major_id" id="education_experience_minor_name_major_id">
+                      <input type="hidden" name="minor_name_major_type_id" id="education_experience_minor_name_major_type_id">
+                      <input type="hidden" name="minor_name_major_type" id="education_experience_minor_name_major_type">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">年级排名</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <select id="education_experience_grade_rank" name="grade_rank" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择您的年级排名。" style="display: none;">
+                        <option value="-1" selected="selected">请选择</option>
+                        <option value="1">前5%</option>
+                        <option value="2">前10%</option>
+                        <option value="3">前20%</option>
+                        <option value="4">前30%</option>
+                        <option value="5">其他</option>
+                      </select>
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>海外工作/学习经历</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <select id="education_experience_is_oversea" name="is_oversea" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您是否有海外工作/学习经历" style="display: none;">
+                        <option value="-1" selected="selected">请选择</option>
+                        <option value="1">有</option>
+                        <option value="2">无</option>
+                      </select>
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="j_is_oversea" style="display:none">
+                    <div class="application_itemWrap j_itemWrap">
+                      <div class="application_itemTitle j_itemTitle">&nbsp;</div>
+                      <div class="application_itemCont j_itemCont clearfix">
+                        <select id="education_experience_oversea_experience" name="oversea_experience" type="select-one" style="display:none;" class="applicationSelsct" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择您的海外经历年限。">
+                          <option value="-1" selected="selected">请选择</option>
+                          <option value="1">1年</option>
+                          <option value="2">2年</option>
+                          <option value="3">3年</option>
+                          <option value="4">4年</option>
+                          <option value="5">5年</option>
+                          <option value="6">5-10年</option>
+                          <option value="7">10年以上</option>
+                        </select>
+                        <div class="application_tipWrap j_tipWrap">
+                          <div class="application_tipMain j_tipMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div class="application_errorWrap j_errorWrap">
+                          <div class="application_errorMain j_errorMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="application_itemWrap j_itemWrap">
+                      <div class="application_itemTitle j_itemTitle">
+                        <i class="icon_must imgBg">&nbsp;</i>海外院校英文名</div>
+                      <div class="application_itemCont j_itemCont clearfix">
+                        <input type="text" class="applicationInput j_plug j_schoolName" name="school_name_abroad" rule="{&quot;must&quot;:true,&quot;max&quot;:40}" err="请填写海外院校英文名。">
+                        <input id="education_experience_school_name_school_abroad_id" class="appForm_Input" datatype="0" type="hidden" name="school_name_abroad_school_id">
+                        <div class="application_tipWrap j_tipWrap">
+                          <div class="application_tipMain j_tipMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div class="application_errorWrap j_errorWrap">
+                          <div class="application_errorMain j_errorMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="application_itemWrap j_itemWrap">
+                      <div class="application_itemTitle j_itemTitle">
+                        <i class="icon_must imgBg">&nbsp;</i>海外院校所在国家</div>
+                      <div class="application_itemCont j_itemCont clearfix">
+                        <input type="text" class="applicationInput j_plug j_schoolCountry" name="school_country_abroad" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写海外院校所在国家。">
+                        <div class="application_tipWrap j_tipWrap">
+                          <div class="application_tipMain j_tipMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                        <div class="application_errorWrap j_errorWrap">
+                          <div class="application_errorMain j_errorMain" style="display:none">
+                            <i class="imgBg">&nbsp;</i>
+                            <p>&nbsp;</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_btnWrap j_btnWrap">
+                    <a href="javascript:void(0)" class="application_btnSure j_btnSure">保存</a>
+                    <a href="javascript:void(0)" class="application_btnCancel j_btnCancel">取消</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

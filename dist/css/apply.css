@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a, a img {
+  text-decoration: none;
+  border: 0;
+}
+select, input, select:focus, input :focus {
+  outline: 0;
+}
+input, textarea, select {
+  font-size: 14px;
+  outline: none;
+}
+table, td {
+  border: 0;
+  padding: 0;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+/** 常见设置 **/
+
+.c {
+  clear: both;
+}
+.clearfix:after, .clearfixVisible:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix, .clearfixVisible {
+  *zoom: 1;
+}
+.fl {
+  float: left
+}
+.l {
+  float: left;
+  _display: inline;
+}
+.fr {
+  float: right;
+}
+.r {
+  float: right;
+  _display: inline;
+}
+.dn {
+  display: none;
+}
+.db {
+  display: block;
+}
+.dib {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+div {
+  line-height: 19px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+ul, dl, ol {
+  list-style: none;
+}
+em, i, b {
+  font-style: normal;
+  font-weight: normal;
+}
+img {
+  border: 0;
+}
+/*框架*/
+
+body {
+  text-align: center;
+  font-size: 14px;
+  font-family: MicroSoft YaHei;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.header {}
+.wrapper-content {
+  width: 980px;
+  margin: 0 auto;
+}
+.wrapper-left {
+  width: 688px;
+  border: 1px solid #ccc;
+}
+.wrapper-right {
+  width: 270px;
+  float: right;
+  position: relative;
+}
+.left-title {
+  font-size: 16px;
+}
+.left-main {}
+.left-box {
+  margin-top: 20px;
+}
+.wrapper-component {
+  width: 100%;
+}
+.fixed-box {
+  position: fixed;
+  _position: absolute;
+  top: 110px;
+}
+.imgBg {
+  background-image: url(../images/application.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* 模块标题 */
+
+.application_tabTitle {
+  margin: -14px 0 8px;
+  position: relative;
+  padding-left: 45px
+}
+.application_tabTitle h3 {
+  height: 28px;
+  font: bold 16px/28px "simsun";
+  padding: 0 5px;
+  background: #fff;
+}
+.application_tabTitle span {
+  color: #f2520a;
+}
+.application_tabTitle p {
+  padding: 0 50px 0 5px;
+  color: #aaa9a9;
+}
+.application_tabOperate {
+  position: absolute;
+  top: 4px;
+  right: 18px;
+  width: 20px;
+  height: 21px
+}
+.application_btnMenu {
+  padding-top: 25px;
+  _height: 65px;
+  _overflow: hidden
+}
+.application_btnMenu a {
+  float: left;
+  margin-right: 3px;
+  width: 63px;
+  height: 63px;
+  border: 1px solid #fff;
+  text-align: center;
+  color: #595757;
+  font-size: 13px;
+  line-height: 23px;
+  font-family: 'Microsoft Yahei';
+}
+.application_btnMenu span {
+  display: block;
+  cursor: pointer
+}
+.application_btnMenu .last {
+  margin-right: 0
+}
+.application_btnMenu .imgBg {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+}
+.application_btnMenu .icon_mailing {
+  background-position: -66px -10px;
+}
+.application_btnMenu .icon_collect {
+  background-position: -234px -10px;
+}
+.application_btnMenu .icon_subscribe {
+  background-position: -122px -10px;
+}
+.application_btnMenu .icon_attention {
+  background-position: -178px -10px;
+}
+.application_btnMenu a:hover {
+  border: 1px solid #fff;
+  color: #27b2e9
+}
+.application_btnMenu a:hover .icon_mailing {
+  background-position: -66px -66px;
+}
+.application_btnMenu a:hover .icon_collect {
+  background-position: -234px -66px;
+}
+.application_btnMenu a:hover .icon_subscribe {
+  background-position: -122px -66px;
+}
+.application_btnMenu a:hover .icon_attention {
+  background-position: -178px -66px;
+}
+/*****简历管理 右侧图标 rex end*****/
+
+.application_nav li {
+  border-left: 2px solid #eee;
+  border-bottom: 1px dashed #e6e6e6;
+  padding: 10px 0 8px 61px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #aaa9a9;
+  cursor: pointer;
+  background: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.application_nav span {
+  float: left
+}
+.application_navText {
+  width: 134px;
+  padding-left: 18px
+}
+.application_nav .icon_correct {
+  margin-top: 9px;
+  display: none
+}
+.application_nav .complete .icon_correct {
+  display: block
+}
+.application_nav .hover {
+  background: #f6f6f6;
+  color: #595757
+}
+.application_nav .complete {
+  color: #595757
+}
+.application_nav .hover .icon_person_info, .application_nav .complete .icon_person_info {
+  background-position: 0 -240px
+}
+.application_nav .hover .icon_contact_info, .application_nav .complete .icon_contact_info {
+  background-position: -360px -360px
+}
+.application_nav .hover .icon_education_experience, .application_nav .complete .icon_education_experience {
+  background-position: -40px -240px
+}
+.application_nav .hover .icon_job_desired, .application_nav .complete .icon_job_desired {
+  background-position: -80px -240px
+}
+.application_nav .hover .icon_work_ecperience, .application_nav .complete .icon_work_ecperience {
+  background-position: -120px -240px
+}
+.application_nav .hover .icon_project_experience, .application_nav .complete .icon_project_experience {
+  background-position: -160px -240px
+}
+.application_nav .hover .icon_awards_activity, .application_nav .complete .icon_awards_activity {
+  background-position: -200px -240px
+}
+.application_nav .hover .icon_comment_byself, .application_nav .complete .icon_comment_byself {
+  background-position: -240px -240px
+}
+.application_nav .hover .icon_skill_favorite, .application_nav .complete .icon_skill_favorite {
+  background-position: -280px -240px
+}
+.application_nav .hover .icon_family_relationship, .application_nav .complete .icon_family_relationship {
+  background-position: -320px -240px
+}
+.application_nav .hover .icon_photo_attach, .application_nav .complete .icon_photo_attach {
+  background-position: -360px -240px
+}
+.application_nav .cur {
+  padding-left: 60px;
+  border-left: 3px solid #27b2e9;
+  color: #27b2e9;
+  background: #fff;
+  font-weight: bold
+}
+.application_nav .cur .icon_person_info {
+  background-position: 0 -280px
+}
+.application_nav .cur .icon_contact_info {
+  background-position: -360px -400px
+}
+.application_nav .cur .icon_education_experience {
+  background-position: -40px -280px
+}
+.application_nav .cur .icon_job_desired {
+  background-position: -80px -280px
+}
+.application_nav .cur .icon_work_ecperience {
+  background-position: -120px -280px
+}
+.application_nav .cur .icon_project_experience {
+  background-position: -160px -280px
+}
+.application_nav .cur .icon_awards_activity {
+  background-position: -200px -280px
+}
+.application_nav .cur .icon_comment_byself {
+  background-position: -240px -280px
+}
+.application_nav .cur .icon_skill_favorite {
+  background-position: -280px -280px
+}
+.application_nav .cur .icon_family_relationship {
+  background-position: -320px -280px
+}
+.application_nav .cur .icon_photo_attach {
+  background-position: -360px -280px
+}
+.application_navEn li {
+  padding-left: 21px
+}
+.application_navEn .application_navText {
+  width: 184px
+}
+.application_navEn .cur {
+  padding-left: 20px
+}
+/*jquery ui*/
+
+.ui-widget {
+  font-size: 14px;
+}
+.ui-selectmenu-button.ui-button {
+  width: 17.4em;
+  background-color: #fff;
+  border: 1px solid #e4e3e3;
+  border-radius: 0;
+  color: #595757;
+  padding: .4em .7em;
+}
+.ui-selectmenu-icon.ui-icon {
+  margin-top: 0.1em;
+}

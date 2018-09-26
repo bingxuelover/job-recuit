@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>求职意向</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="application_tabWrap j_tabWrap" required="required">
+        <div class="application_tabTitle">
+          <h3 class="dib">求职意向<span>（必填）</span></h3>
+          <p >&nbsp;写下你希望从事的行业，及工作性质</p>
+          <div class="application_tabOperate">
+            <a href="javascript:void(0)" class="imgBg icon_slideUp j_tabSlideUp" title="展开编辑" style="display: none">&nbsp;</a>
+            <a href="javascript:void(0)" class="imgBg icon_canEdit j_tabEdit" title="编辑" style="display:inline-block;">&nbsp;</a>
+          </div>
+        </div>
+        <div class="application_tabMain j_tabMain">
+          <div class="application_tabLoading j_tabLoading" style="display:none">
+            <span class="dib">&nbsp;</span>
+          </div>
+          <div class="application_previewWrap j_preview" style="display: none">
+            <div class="application_previewTitle j_previewTitle"></div>
+            <div class="application_previewMain j_previewMain">
+              <ul></ul>
+            </div>
+          </div>
+          <div class="application_formWrap j_formWrap">
+            <form id="wanted_career" name="wanted_career" formid="1027" childmoudle="">
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递公司</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_company" name="company" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递公司" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="省公司">省公司</option>
+                    <option value="石家庄分公司">石家庄分公司</option>
+                    <option value="承德分公司">承德分公司</option>
+                    <option value="张家口分公司">张家口分公司</option>
+                    <option value="秦皇岛分公司">秦皇岛分公司</option>
+                    <option value="廊坊分公司">廊坊分公司</option>
+                    <option value="保定分公司">保定分公司</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company_top1" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="通信网络工程师（IT方向）">通信网络工程师（IT方向）</option>
+                    <option value="通信网络工程师（网络安全方向）">通信网络工程师（网络安全方向）</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company_top2" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="网络分析工程师">网络分析工程师</option>
+                    <option value="网络规划工程师">网络规划工程师</option>
+                    <option value="网络优化工程师">网络优化工程师</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company_top3" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="大数据分析工程师">大数据分析工程师</option>
+                    <option value="IT设计开发工程师">IT设计开发工程师</option>
+                    <option value="IT安全管理工程师">IT安全管理工程师</option>
+                    <option value="IT开发分析工程师">IT开发分析工程师</option>
+                    <option value="IT运营管理工程师">IT运营管理工程师</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company1" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="网络架构工程师（全业务方向）">网络架构工程师（全业务方向）</option>
+                    <option value="通信网络工程师（无线方向）">通信网络工程师（无线方向）</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company2" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:30}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="通信网络工程师（无线方向）">通信网络工程师（无线方向）</option>
+                    <option value="市场政企业务管理">市场政企业务管理</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company3" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="网络架构工程师">网络架构工程师</option>
+                    <option value="通信网络工程师">通信网络工程师</option>
+                    <option value="财务管理">财务管理</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company4" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="通信网络工程师">通信网络工程师</option>
+                    <option value="大数据运营工程师">大数据运营工程师</option>
+                    <option value="网络建维工程师">网络建维工程师</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company5" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="网络架构工程师">网络架构工程师</option>
+                    <option value="工程项目管理">工程项目管理</option>
+                    <option value="市场政企业务管理">市场政企业务管理</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_company6" style="display: none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>投递职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_career_position" name="position" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写投递职位" style="display: none;">
+                    <option value="-1">请选择</option>
+                    <option value="网络架构工程师">网络架构工程师</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>是否接受调剂</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_change_status" name="change_status" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择是否接受调剂。" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">是</option>
+                    <option value="2">否</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_change_status" style="display:none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>是否意愿去县区工作</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_change_status_country" name="change_status_country" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择意愿" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">愿意</option>
+                    <option value="2">不愿意</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_change_status_country" style="display:none">
+                <div class="application_itemTitle j_itemTitle">意愿工作县区&职位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <input type="text" class="applicationInput" name="change_status_country_choice" value="">
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_change_status" style="display:none">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>是否意愿跨地区调剂</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_change_status_region" name="change_status_region" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择意愿" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">愿意</option>
+                    <option value="2">不愿意</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>笔试地点</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="wanted_positon_exam" name="positon_exam" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择笔试地点" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="北京">北京</option>
+                    <option value="天津">天津</option>
+                    <option value="石家庄">石家庄</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_btnWrap j_btnWrap">
+                <a href="javascript:void(0)" class="application_btnSure j_btnSure">保存</a>
+                <a href="javascript:void(0)" class="application_btnCancel j_btnCancel">取消</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

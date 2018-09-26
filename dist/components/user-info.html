@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>个人信息</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="application_tabWrap j_tabWrap" required="required">
+        <div class="application_tabTitle">
+          <h3 class="dib">个人信息<span>（必填）</span></h3>
+          <p >&nbsp;详尽的个人信息能让企业更快的了解您</p>
+          <div class="application_tabOperate">
+            <a href="javascript:void(0)" class="imgBg icon_slideUp j_tabSlideUp" style="display: none;" title="展开编辑">&nbsp;</a>
+            <a href="javascript:void(0)" class="imgBg icon_canEdit j_tabEdit" title="编辑">&nbsp;</a>
+          </div>
+        </div>
+        <div class="application_tabMain j_tabMain">
+          <div class="application_tabLoading j_tabLoading" style="display:none">
+            <span class="dib">&nbsp;</span>
+          </div>
+          <div class="application_previewWrap j_preview" style="display:none">
+            <div class="application_previewTitle j_previewTitle">
+              <p class="ml20 mb20">
+                <span></span>
+              </p>
+            </div>
+            <div class="application_previewMain j_previewMain">
+              <ul></ul>
+            </div>
+          </div>
+          <div class="application_formWrap j_formWrap">
+            <form id="person_info" name="person_info" childmoudle="" formid="1024">
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>姓名</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <input id="person_info_name" type="text" name="name" maxlength="40" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:40}" err="请填写您的真实姓名">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>性别</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_gender" name="gender" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的性别。" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">男</option>
+                    <option value="2">女</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>请选择您的性别。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>出生日期</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <input type="text" name="birth" readonly="readonly" id="person_info_birth" value="选择日期" data-value="选择日期" datatype="6" class="applicationInput applicationPlug j_plug j_toDay" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的出生日期。">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>请选择您的出生日期。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>婚姻状况</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_marital_status" name="marital_status" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的婚姻状况。" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">未婚</option>
+                    <option value="2">已婚</option>
+                    <option value="3">离异</option>
+                    <option value="5">保密</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>是否生育</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_baby_status" name="baby_status" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择您的生育状况。" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">是</option>
+                    <option value="2">否</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>证件号码类型</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_id_card_type" name="id_card_type" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:true,&quot;max&quot;:40}" err="请选择您的证件类型" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="7">身份证</option>
+                    <option value="8">其他</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>请选择您的证件类型</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_id_card_type" style="display:none">
+                <div class="application_itemTitle j_itemTitle">&nbsp;</div>
+                <div class="application_itemCont clearfix">
+                  <input id="person_info_id_card" type="text" name="id_card" maxlength="40" tip="中国大陆居民必须填写身份证号码" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:40}" err="请填写您有效的证件号码">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">政治面貌</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_politics_bg" name="politics_bg" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择您的政治面貌。" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="4">团员</option>
+                    <option value="1">中共党员(含预备党员)</option>
+                    <option value="2">民主党派</option>
+                    <option value="3">无党派人士</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">民族</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_nation" name="nation" type="select-one" class="applicationSelsct" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择民族" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">汉族</option>
+                    <option value="2">蒙古族</option>
+                    <option value="3">回族</option>
+                    <option value="4">藏族</option>
+                    <option value="5">维吾尔族</option>
+                    <option value="6">苗族</option>
+                    <option value="7">彝族</option>
+                    <option value="8">壮族</option>
+                    <option value="9">布依族</option>
+                    <option value="10">朝鲜族</option>
+                    <option value="11">满族</option>
+                    <option value="12">侗族</option>
+                    <option value="13">瑶族</option>
+                    <option value="14">白族</option>
+                    <option value="15">土家族</option>
+                    <option value="16">哈尼族</option>
+                    <option value="17">哈萨克族</option>
+                    <option value="18">傣族</option>
+                    <option value="19">黎族</option>
+                    <option value="20">僳僳族</option>
+                    <option value="21">佤族</option>
+                    <option value="22">畲族</option>
+                    <option value="23">高山族</option>
+                    <option value="24">拉祜族</option>
+                    <option value="25">水族</option>
+                    <option value="26">东乡族</option>
+                    <option value="27">纳西族</option>
+                    <option value="28">景颇族</option>
+                    <option value="29">柯尔克孜族</option>
+                    <option value="30">土族</option>
+                    <option value="31">达斡尔族</option>
+                    <option value="32">仫佬族</option>
+                    <option value="33">羌族</option>
+                    <option value="34">布朗族</option>
+                    <option value="35">撒拉族</option>
+                    <option value="36">毛南族</option>
+                    <option value="37">仡佬族</option>
+                    <option value="38">锡伯族</option>
+                    <option value="39">阿昌族</option>
+                    <option value="40">普米族</option>
+                    <option value="41">塔吉克族</option>
+                    <option value="42">怒族</option>
+                    <option value="43">乌孜别克族</option>
+                    <option value="44">俄罗斯族</option>
+                    <option value="45">鄂温克族</option>
+                    <option value="46">德昂族</option>
+                    <option value="47">保安族</option>
+                    <option value="48">裕固族</option>
+                    <option value="49">京族</option>
+                    <option value="50">塔塔尔族</option>
+                    <option value="51">独龙族</option>
+                    <option value="52">鄂伦春族</option>
+                    <option value="53">赫哲族</option>
+                    <option value="54">门巴族</option>
+                    <option value="55">珞巴族</option>
+                    <option value="56">基诺族</option>
+                    <option value="999">国外</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>籍贯</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <input id="person_info_native_place" type="text" name="native_place" maxlength="200" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:200}" err="请填写您的籍贯">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>现居住城市</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <input
+                    type="text"
+                    readonly="readonly"
+                    class="applicationInput applicationPlug j_plug j_citySingle"
+                    name="nowlocated_city"
+                    id="person_info_nowlocated"
+                    datatype="7"
+                    value="选择城市"
+                    data-value="选择城市"
+                    rule="{&quot;must&quot;:true,&quot;max&quot;:100}"
+                    err="请选择您的现居住城市">
+                  <input type="hidden" name="nowlocated_city_id" id="person_info_nowlocated_city_id">
+                  <input type="hidden" name="nowlocated_province_id" id="person_info_nowlocated_province_id">
+                  <input type="hidden" name="nowlocated_province" id="person_info_nowlocated_province">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>家庭常住地</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <input type="text" readonly="readonly" class="applicationInput applicationPlug j_plug" name="hukou_city" id="person_info_hukou" datatype="7" value="选择城市" data-value="选择城市" rule="{&quot;must&quot;:true,&quot;max&quot;:100}" err="请选择您家庭常住地。">
+                  <input type="hidden" name="hukou_city_id" id="person_info_hukou_city_id">
+                  <input type="hidden" name="hukou_province_id" id="person_info_hukou_province_id">
+                  <input type="hidden" name="hukou_province" id="person_info_hukou_province">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">身高(CM)</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <input id="person_info_stature" type="text" name="stature" maxlength="3" tip="（单位：厘米）" class="applicationInput" rule="{&quot;must&quot;:false,&quot;max&quot;:3}" err="身高最多只能填写3位数字（单位：CM）">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">体重(KG)</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <input id="person_info_avoirdupois" type="text" name="avoirdupois" maxlength="3" tip="（单位：公斤）" class="applicationInput" rule="{&quot;must&quot;:false,&quot;max&quot;:3}" err="体重最多只能填写2~3位数字（单位：KG）">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">
+                  <i class="icon_must imgBg">&nbsp;</i>亲戚受雇于本单位</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_relative_status" name="relative_status" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请选择是否有亲友受雇于本单位" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">是</option>
+                    <option value="2">否</option>
+                  </select>
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap j_relative_status_type" style="display:none">
+                <div class="application_itemTitle j_itemTitle"></div>
+                <div class="application_itemCont clearfix">
+                  <input id="person_info_relative_status_info" type="text" name="relative_status_info" maxlength="40" tip="亲友的单位职位、姓名和电话" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:40}" err="请填写亲友的单位职位和姓名">
+                  <div class="application_tipWrap j_tipWrap">
+                    <div class="application_tipMain j_tipMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                  <div class="application_errorWrap j_errorWrap">
+                    <div class="application_errorMain j_errorMain" style="display:none">
+                      <i class="imgBg">&nbsp;</i>
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">是否计划报考公务员</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_servant_status" name="servant_status" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择您的生育状况。" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">是</option>
+                    <option value="2">否</option>
+                  </select>
+                </div>
+              </div>
+              <div class="application_itemWrap j_itemWrap">
+                <div class="application_itemTitle j_itemTitle">是否计划考研/保研/出国</div>
+                <div class="application_itemCont j_itemCont clearfix">
+                  <select id="person_info_abroad_status" name="abroad_status" type="select-one" class="applicationSelsct small" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请选择您的生育状况。" style="display: none;">
+                    <option value="-1" selected="selected">请选择</option>
+                    <option value="1">是</option>
+                    <option value="2">否</option>
+                  </select>
+                </div>
+              </div>
+              <div class="application_btnWrap j_btnWrap">
+                <a href="javascript:void(0)" class="application_btnSure j_btnSure">保存</a>
+                <a href="javascript:void(0)" class="application_btnCancel j_btnCancel">取消</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

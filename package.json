@@ -1,0 +1,16 @@
+{
+  "name": "jobrecuit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": ""
+  },
+  "author": "Sophie",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
+}

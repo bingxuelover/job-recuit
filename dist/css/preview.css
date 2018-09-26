@@ -1,0 +1,154 @@
+/**
+	* preview.css 为私有样式表，为简历预览服务
+**/
+.w990 {
+  width: 990px;
+}
+table p {
+  line-height: 18px;
+  color: #595757
+}
+em {
+  color: #aaa9a9
+}
+span {
+  color: #595757;
+}
+.pre_info {
+  padding-bottom: 30px
+}
+.preview {
+  margin-top: 105px;
+}
+.preview_main {
+  border: 1px solid #e6e6e6;
+}
+.preview_top {
+  border-bottom: 1px dashed #e6e6e6;
+  padding: 30px 0px 50px 46px;
+}
+.preview_top td {
+  padding: 30px 0 50px 0
+}
+.preview_top i {
+  _height: 24px;
+  *line-height: 24px;
+  *display: inline;
+  *zoom: 1;
+  *height: 25px;
+  font-size: 22px;
+  font-family: 'Microsoft YaHei';
+  color: #333333;
+}
+.preview_top em {
+  font-size: 16px;
+  font-family: 'SimSun';
+  color: #9f9f9f;
+  vertical-align: middle;
+}
+.preview_top_left {
+  margin-top: 8px;
+  padding-left: 46px
+}
+.preview_top_left i {
+  margin-right: 9px;
+}
+.preview_top_right {
+  display: inline-block;
+  margin-right: 36px;
+}
+.preview_top_right .Editbtn, .preview_top_right .Exportbtn {
+  padding: 9px 13px;
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border: 1px solid #27b3e9;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'simsun';
+  color: #27b2e9;
+  cursor: pointer
+}
+.preview_right_a1 {
+  margin-right: 8px;
+}
+.per_photo {
+  width: 106px;
+  height: 142px;
+  border: 1px solid #e3e3e3;
+  margin-right: 48px
+}
+.per_basicInfo {
+  width: 240px;
+  padding-top: 10px
+}
+.per_basic {
+  padding: 29px 0 31px 50px;
+}
+.per_basic td {
+  padding: 30px 0
+}
+.per_basic em, .per_basic span {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei';
+}
+.per_basic ul {
+  padding-top: 10px;
+}
+.per_basic p {
+  margin-bottom: 14px;
+}
+.per_basic em {
+  color: #aaa9a9;
+}
+.per_basic span {
+  color: #595757;
+}
+.per_Title {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #e7e7e7;
+}
+.per_Title p {
+  font-size: 16px;
+  font-family: 'simsun';
+  color: #595757;
+  padding-left: 52px;
+}
+.per_infoCont {
+  padding: 30px 15px 0 95px
+}
+.special {
+  margin-bottom: 30px;
+}
+.per_infoCont div {
+  padding-bottom: 10px;
+}
+.per_infoCont em, .per_infoCont span {
+  font-size: 12px;
+  font-family: 'simsun';
+}
+.per_infoCont em {
+  color: #aaa9a9;
+  vertical-align: top;
+  max-width: 150px;
+  _width: 150px;
+  _text-align: right;
+}
+.per_infoCont span {
+  color: #595757;
+  width: 700px;
+}
+.per_infoCont .arial {
+  text-align: left;
+  font-family: Arial;
+}
+.per_infoCont_cur i {
+  font-size: 14px;
+  font-family: 'simsun';
+  color: #595757;
+  font-weight: bold;
+  margin-right: 10px;
+}

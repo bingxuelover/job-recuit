@@ -1,0 +1,251 @@
+@charset "utf-8";
+/*框架预览 CSS*/
+
+.mkeBody {
+  background: #121212;
+}
+.mkeHeadBox {
+  padding: 30px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 3px solid #666;
+  box-shadow: inset 0 -2px 3px #000000;
+  letter-spacing: 1px;
+  font: 26px/26px "微软雅黑";
+}
+.mkeFooterBox {
+  padding: 25px 10px;
+  text-overflow: ellipsis;
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  overflow: hidden;
+  border-top: 3px solid #666;
+  box-shadow: inset 0 2px 3px #000000;
+}
+.mkeContentBox {
+  background: #fff;
+  padding: 50px 0 50px 0;
+  height: 580px;
+}
+.mkeContentBox:after {
+  height: 0;
+  clear: both;
+}
+.mkeFooterBox p, .mkeFooterBox div {
+  padding: 0;
+  margin: 0;
+  line-height: 26px;
+  font-size: 14px;
+}
+.mkeFooterBox a {
+  color: #fff;
+  white-space: nowrap
+}
+.mkeButton {
+  background: #F36;
+  display: inline-block;
+  text-decoration: none;
+  width: 102px;
+  border-radius: 0.3em;
+  transition: all 0.3s ease
+}
+.mkeButton:hover {
+  background: #FF1550;
+}
+.mkeURL {
+  font-size: 24px;
+}
+.mkeFooterBox .mKeBannerAD {
+  width: 728px;
+  height: 90px;
+  margin: 18px auto 0;
+}
+.mkeFooterBox .mSmallKeBannerAD {
+  display: none;
+}
+@media only screen and (max-width:900px) {
+  .mkeButton {
+    display: block;
+    margin: 8px auto 0;
+  }
+}
+@media only screen and (max-width:767px) {
+  .mkeHeadBox {
+    font-size: 18px;
+    padding: 15px 10px;
+  }
+  .mkeFooterBox p, .mkeFooterBox div {
+    line-height: 24px;
+    font-size: 12px;
+  }
+  .mkeURL {
+    font-size: 22px;
+  }
+  .mkeFooterBox .mKeBannerAD {
+    display: none;
+  }
+  .mkeFooterBox .mSmallKeBannerAD {
+    width: 300px;
+    height: 250px;
+    margin: 18px auto 0;
+    display: block;
+  }
+}
+/*End*/
+
+/*主要CSS*/
+
+.page-header {
+  margin-top: 0;
+}
+.city-picker-input {
+  opacity: 0 !important;
+  top: -9999px;
+  left: -9999px;
+  position: absolute;
+}
+.city-picker-span {
+  float: left;
+  position: relative;
+  display: block;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border: 1px solid #e4e3e3;
+  background-color: #fff;
+  color: #595757;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.city-picker-span>.placeholder {
+  color: #595757;
+  display: block;
+  padding-left: 8px;
+}
+.city-picker-span>.arrow {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 10px;
+  margin-top: -3px;
+  height: 5px;
+  background: url(../images/drop-arrow.png) -10px -25px no-repeat;
+}
+.city-picker-span.focus, .city-picker-span.open {
+  border-color: #27b2e9;
+}
+.city-picker-span.open>.arrow {
+  background-position: -10px -10px;
+}
+.city-picker-span>.title {
+  padding-left: 6px;
+}
+.city-picker-span>.title>span {
+  color: #333;
+  padding: 5px;
+  border-radius: 3px;
+}
+.city-picker-span>.title>span:hover {
+  background-color: #f1f8ff;
+}
+.city-picker-dropdown {
+  position: absolute;
+  width: 315px;
+  left: -9999px;
+  top: -9999px;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 999999;
+  display: none;
+  min-width: 330px;
+  margin-bottom: 20px;
+}
+.city-select-wrap {
+  border: 1px solid #ddd;
+}
+.city-select-tab {
+  border-bottom: 1px solid #ccc;
+  background: #f0f0f0;
+  font-size: 13px;
+}
+.city-select-tab>a {
+  display: inline-block;
+  padding: 8px 22px;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid transparent;
+  color: #4D4D4D;
+  text-align: center;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: -1px;
+}
+.city-select-tab>a.active {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  color: #46A4FF;
+}
+.city-select-tab>a:first-child {
+  border-left: none;
+}
+.city-select-tab>a:last-child.active {
+  border-right: 1px solid #ccc;
+}
+.city-select-content {
+  width: 100%;
+  min-height: 10px;
+  background-color: #fff;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.city-select {
+  font-size: 13px;
+}
+.city-select dl {
+  line-height: 2;
+  clear: both;
+  padding: 3px 0;
+  margin: 0;
+}
+.city-select dt {
+  position: absolute;
+  width: 2.5em;
+  font-weight: 500;
+  text-align: right;
+  line-height: 2;
+}
+.city-select dd {
+  margin-left: 0;
+  line-height: 2;
+}
+.city-select.province dd {
+  margin-left: 3em;
+}
+.city-select a {
+  display: inline-block;
+  padding: 0 10px;
+  outline: 0;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 2px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+.city-select a:hover, .city-select a:focus {
+  background-color: #f1f8ff;
+  border-radius: 2px;
+  color: #46A4FF;
+}
+.city-select a.active {
+  background-color: #46A4FF;
+  color: #fff;
+  border-radius: 2px;
+}

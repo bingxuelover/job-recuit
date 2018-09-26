@@ -1,0 +1,246 @@
+@charset "gb2312";
+/* CSS Document */
+body, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body, button, input, select, textarea {
+  font: 14px tahoma, arial;
+  font-family: "微软雅黑";
+  line-height: 30px;
+  text-align: justify;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+img {
+  _display: block;
+  vertical-align: top;
+  border: 0;
+}
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  color: #3C3C3C;
+  text-decoration: none;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset, img {
+  border: 0;
+}
+button, input, select, textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clear {
+  clear: both;
+}
+.mid {
+  width: 1000px;
+  margin: 0 auto;
+}
+.indexbg {
+  width: 100%;
+  height: 768px;
+  margin: 0 auto;
+  background: url(../images/indexbg.jpg) no-repeat center;
+}
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 25px;
+  color: #566382;
+}
+.top {
+  width: 100%;
+  height: 90px;
+  background: #fff;
+}
+.logo {
+  width: 240px;
+  float: left;
+}
+.navi {
+  float: right;
+}
+.navi li {
+  width: 72px;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 90px;
+  float: left;
+}
+.navi li a {
+  display: block;
+  width: 72px;
+  height: 75px;
+  border-bottom: 5px solid #fff;
+  font-size: 18px;
+}
+.navi li a:hover, .navi li a.on {
+  border-bottom: 5px solid #0085d0;
+}
+.banner {
+  width: 100%;
+  height: 415px;
+  background: url(../images/banner.jpg) no-repeat center;
+  margin: 0 auto;
+}
+.title {
+  width: 100%;
+  height: 40px;
+  background: url(../images/titbg.jpg) no-repeat center;
+  margin: 40px auto;
+}
+.title .tit_txt {
+  font-size: 32px;
+  color: #0085d0;
+  padding-left: 36px;
+  padding-top: 3px;
+}
+.title .tit_txt .en {
+  font-size: 14px;
+  color: #0085d0;
+  text-align: right;
+  float: right;
+}
+.intro_com {
+  width: 890px;
+  margin: 0 auto 50px auto;
+}
+.intro_com h1 {
+  text-indent: 30px;
+}
+.intro_com h2 {
+  text-indent: 30px;
+}
+.intro_com p {
+  text-indent: 30px;
+}
+.intro_com .color {
+  color: #e5007f;
+  font-weight: bold;
+}
+.intro_com .red {
+  color: #f00;
+}
+.intro_com a {
+  color: #3d80e3;
+}
+/*jobs*/
+.main {
+  width: 1000px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto 50px auto;
+}
+.comlist {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.comlist li {
+  width: 154px;
+  height: 48px;
+  float: left;
+  background: url(../images/jobs_11.jpg) no-repeat center;
+  line-height: 48px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #0085d0;
+  font-weight: bold;
+}
+.comlist li.cur {
+  background: url(../images/jobs_09.jpg) no-repeat center;
+  color: #fff;
+}
+.jobs {
+  width: 990px;
+  margin: 0 auto;
+}
+.jobs .comname {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  background: #0085d0;
+  line-height: 36px;
+  text-align: center;
+}
+.jobs .jobslist .comintro_title {
+  font-size: 15px;
+}
+.jobs .jobslist .comintro {
+  width: 875px;
+  margin: 10px auto;
+}
+.jobs .jobbox {
+  width: 880px;
+  margin: 0 auto;
+}
+.jobs .deptname td {
+  font-size: 16px;
+  font-weight: bold;
+  height: 30px;
+  color: #0085d0;
+  border-top: 2px solid #0085d0;
+  background: #f1f1f1;
+  padding-left: 10px;
+}
+.jobbox .jobitem td a {
+  color: #333;
+}
+.jobbox .jobitem td a:hover {
+  color: #0085d0;
+}
+/*schedule*/
+.schedule_title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.schedule td {
+  border: 1px solid #C1C1C1;
+}
+.schedule .title {
+  color: #fff;
+  font-size: 15px;
+  height: 40px;
+  background: #0070c0;
+}
+.copyright {
+  width: 100%;
+  height: 58px;
+  background: url(../images/btmbg.jpg) no-repeat center top;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+}

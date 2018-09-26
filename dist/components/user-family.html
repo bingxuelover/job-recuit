@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>家庭成员</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="application_tabWrap j_tabWrap">
+        <div class="application_tabTitle">
+          <h3 class="dib">家庭关系</h3>
+          <p >&nbsp;需填写的人员关系，包括（父母、配偶、子女）</p>
+          <div class="application_tabOperate">
+            <a href="javascript:void(0)" class="imgBg icon_slideUp j_tabSlideUp" style="display:none" title="展开编辑">&nbsp;</a>
+            <a href="javascript:void(0)" class="imgBg icon_add j_tabAdd" title="添加" max="5" style="display: none;">&nbsp;</a>
+            <a href="javascript:void(0)" class="imgBg icon_canEdit j_tabEdit" title="编辑">&nbsp;</a>
+          </div>
+        </div>
+        <div class="application_tabMain j_tabMain">
+          <div class="application_tabLoading j_tabLoading" style="display:none">
+            <span class="dib">&nbsp;</span>
+          </div>
+          <div class="j_temp" style="display:none;">
+            <div class="j_tabRepeat application_tabRepeat">
+              <div class="application_previewWrap j_preview" style="display:none">
+                <div class="application_previewTitle j_previewTitle">
+                  <div class="application_previewTitle_bg">&nbsp;</div>
+                  <div class="application_previewName dib j_previewName">&nbsp;</div>
+                  <div class="application_previewOperate">
+                    <a href="javascript:void(0)" class="imgBg icon_canEdit mr5 j_repeatEdit" title="编辑">&nbsp;</a>
+                    <a href="javascript:void(0)" class="imgBg icon_delete j_delete" title="删除">&nbsp;</a>
+                  </div>
+                </div>
+                <div class="application_previewMain j_previewMain">
+                  <ul>&nbsp;</ul>
+                </div>
+              </div>
+              <div class="application_formWrap j_formWrap">
+                <form id="family_relationship" name="family_relationship" formid="1029" childmoudle="m_family_relationship" formeditid="">
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>亲属姓名</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input id="family_relationship_family_name" type="text" name="family_name" maxlength="20" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:20}" err="请填写您的亲属姓名">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>亲属关系</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input id="family_relationship_family_relation" type="text" name="family_relation" maxlength="15" class="applicationInput" rule="{&quot;must&quot;:true,&quot;max&quot;:15}" err="请填写您与亲属的关系">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">亲属工作单位</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input id="family_relationship_family_company" type="text" name="family_company" maxlength="50" class="applicationInput" rule="{&quot;must&quot;:false,&quot;max&quot;:50}" err="请填写您亲属的工作单位">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">亲属职位</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <input id="family_relationship_family_position" type="text" name="family_position" maxlength="20" class="applicationInput" rule="{&quot;must&quot;:false,&quot;max&quot;:20}" err="请填写您亲属的职位">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_itemWrap j_itemWrap">
+                    <div class="application_itemTitle j_itemTitle">
+                      <i class="icon_must imgBg">&nbsp;</i>亲属电话</div>
+                    <div class="application_itemCont j_itemCont clearfix">
+                      <span class="area_code" name="span_national_code">0086</span>
+                      <div class="area_code_list" style="display: none;">
+                        <dl class="code_list_main">
+                          <dt>常用</dt>
+                          <dd>
+                            中国<span>0086</span></dd>
+                          <dd>
+                            中国香港<span>00852</span></dd>
+                          <dd>
+                            中国台湾<span>00886</span></dd>
+                          <dd>
+                            中国澳门<span>00853</span></dd>
+                          <dd>
+                            美国<span>001</span></dd>
+                          <dt>A</dt>
+                          <dd>
+                            澳大利亚<span>0061</span></dd>
+                          <dd>
+                            中国澳门<span>00853</span></dd>
+                          <dt>B</dt>
+                          <dd>
+                            巴西<span>0055</span></dd>
+                          <dt>D</dt>
+                          <dd>
+                            德国<span>0049</span></dd>
+                          <dt>E</dt>
+                          <dd>
+                            俄罗斯<span>007</span></dd>
+                          <dt>F</dt>
+                          <dd>
+                            法国<span>0033</span></dd>
+                          <dt>H</dt>
+                          <dd>
+                            韩国<span>0082</span></dd>
+                          <dt>J</dt>
+                          <dd>
+                            加拿大<span>001</span></dd>
+                          <dt>M</dt>
+                          <dd>
+                            马来西亚<span>0060</span></dd>
+                          <dd>
+                            美国<span>001</span></dd>
+                          <dt>R</dt>
+                          <dd>
+                            日本<span>0081</span></dd>
+                          <dt>T</dt>
+                          <dd>
+                            中国台湾<span>00886</span></dd>
+                          <dd>
+                            泰国<span>0066</span></dd>
+                          <dt>X</dt>
+                          <dd>
+                            中国香港<span>00852</span></dd>
+                          <dd>
+                            新加坡<span>0065</span></dd>
+                          <dt>Y</dt>
+                          <dd>
+                            印度<span>0091</span></dd>
+                          <dd>
+                            英国<span>0044</span></dd>
+                          <dt>Z</dt>
+                          <dd>
+                            中国<span>0086</span></dd>
+                        </dl>
+                        <input id="family_relationship_family_code" type="text" name="family_code" maxlength="40" value="0086">
+                      </div>
+                      <input id="family_relationship_family_iphone" type="text" name="mobile_number" maxlength="30" class="applicationInput mobileSmall" rule="{&quot;must&quot;:true,&quot;max&quot;:100}" err="请填写有效的手机号">
+                      <div class="application_tipWrap j_tipWrap">
+                        <div class="application_tipMain j_tipMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                      <div class="application_errorWrap j_errorWrap">
+                        <div class="application_errorMain j_errorMain" style="display:none">
+                          <i class="imgBg">&nbsp;</i>
+                          <p>&nbsp;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="application_btnWrap j_btnWrap">
+                    <a href="javascript:void(0)" class="application_btnSure j_btnSure">保存</a>
+                    <a href="javascript:void(0)" class="application_btnCancel j_btnCancel">取消</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
